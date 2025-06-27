@@ -1,72 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kitchen Gold Foods</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: url('spices.jpeg') no-repeat center center fixed;
-      background-size: cover;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: white;
-      backdrop-filter: brightness(0.6); /* Optional: can help with contrast */
-    }
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kitchen Gold Foods</title>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: url('spices.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            overflow: hidden;
+        }
 
-    h1 {
-      font-size: 3.2em;
-      margin: 0 20px 0.4em;
-      background: linear-gradient(45deg, #FFD700, #FFA500, #FFDF00, #FFD700);
-      background-size: 200% auto;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      animation: shine 3s linear infinite;
-      text-shadow: 1px 1px 5px rgba(255, 215, 0, 0.6);
-    }
+        h1 {
+            font-size: 3.2em;
+            margin: 0 20px 0.4em;
+            color: white;
+            text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+        }
 
-    @keyframes shine {
-      to {
-        background-position: 200% center;
-      }
-    }
+        @keyframes bounce {
+            from { transform: translateY(0); }
+            to { transform: translateY(-10px); }
+        }
 
-    p {
-      font-size: 1.4em;
-      margin: 0 20px 1em;
-      line-height: 1.6;
-      text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
-    }
+        @keyframes blinker {
+            50% { opacity: 0; }
+        }
 
-    .phone {
-      font-size: 1.3em;
-      color: #ffd700;
-      text-shadow: 1px 1px 3px black;
-    }
+        p {
+            font-size: 2em;
+            margin: 0 20px 1em;
+            line-height: 1.6;
+            color: white;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+        }
 
-    .phone a {
-      color: #ffd700;
-      font-weight: bold;
-      text-decoration: none;
-    }
+        .phone {
+            font-size: 2em;
+            color: white;
+            font-weight: 500;
+            text-shadow: 1px 1px 3px black;
+        }
 
-    .phone a:hover {
-      text-decoration: underline;
-    }
-  </style>
+        .phone a {
+            color: white;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .phone a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-  <h1>Kitchen Gold Foods</h1>
-  <p>Our flavorful journey is brewing.<br> We’re working behind the scenes to bring you authentic Indian spices.</p>
-  <div class="phone">
+<h1>Kitchen Gold Foods</h1>
+<p>Spices are grinding. magic is coming!<br> We’re working behind the scenes to bring you authentic Indian spices.</p>
+<div class="phone">
     📞 Reach us at <a href="tel:+91-9986494353">+91-9986494353</a>
-  </div>
+</div>
 </body>
 </html>
