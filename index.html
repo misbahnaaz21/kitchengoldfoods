@@ -9,7 +9,7 @@
       margin: 0;
       padding: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: url('https://unsplash.com/photos/a-table-topped-with-bowls-filled-with-different-types-of-spices-w-kqKbjUEyw') no-repeat center center fixed;
+      background: url('https://images.unsplash.com/photo-1606788075761-36c17cd7732b?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
       background-size: cover;
       display: flex;
       justify-content: center;
@@ -26,14 +26,24 @@
       border-radius: 16px;
       max-width: 600px;
       width: 90%;
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
     }
 
     h1 {
-      font-size: 3em;
-      margin-bottom: 0.3em;
-      background: linear-gradient(to right, gold, orange);
+      font-size: 3.2em;
+      margin-bottom: 0.4em;
+      background: linear-gradient(45deg, #FFD700, #FFA500, #FFDF00, #FFD700);
+      background-size: 200% auto;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      animation: shine 3s linear infinite;
+      text-shadow: 1px 1px 5px rgba(255, 215, 0, 0.7);
+    }
+
+    @keyframes shine {
+      to {
+        background-position: 200% center;
+      }
     }
 
     p {
@@ -50,6 +60,7 @@
     .phone a {
       color: #ffd700;
       text-decoration: none;
+      font-weight: bold;
     }
 
     .phone a:hover {
@@ -60,7 +71,7 @@
 <body>
   <div class="content">
     <h1>Kitchen Gold Foods</h1>
-    <p>Our flavorful journey is brewing. <br> We're working behind the scenes to bring you authentic Indian spices and recipes.</p>
+    <p>Our flavorful journey is brewing.<br> We’re working behind the scenes to bring you authentic Indian spices.</p>
     <div class="phone">
       📞 Reach us at <a href="tel:+91-9986494353">+91-9986494353</a>
     </div>
