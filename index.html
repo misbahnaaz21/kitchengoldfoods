@@ -9,35 +9,27 @@
       margin: 0;
       padding: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: url('https://images.unsplash.com/photo-1606788075761-36c17cd7732b?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+      background: url('spices.jpeg') no-repeat center center fixed;
       background-size: cover;
+      height: 100vh;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100vh;
       text-align: center;
       color: white;
-      backdrop-filter: brightness(0.4);
-    }
-
-    .content {
-      background: rgba(0, 0, 0, 0.6);
-      padding: 40px;
-      border-radius: 16px;
-      max-width: 600px;
-      width: 90%;
-      box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+      backdrop-filter: brightness(0.6); /* Optional: can help with contrast */
     }
 
     h1 {
       font-size: 3.2em;
-      margin-bottom: 0.4em;
+      margin: 0 20px 0.4em;
       background: linear-gradient(45deg, #FFD700, #FFA500, #FFDF00, #FFD700);
       background-size: 200% auto;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       animation: shine 3s linear infinite;
-      text-shadow: 1px 1px 5px rgba(255, 215, 0, 0.7);
+      text-shadow: 1px 1px 5px rgba(255, 215, 0, 0.6);
     }
 
     @keyframes shine {
@@ -47,20 +39,22 @@
     }
 
     p {
-      font-size: 1.3em;
-      margin-bottom: 1em;
-      line-height: 1.5;
+      font-size: 1.4em;
+      margin: 0 20px 1em;
+      line-height: 1.6;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
     }
 
     .phone {
-      font-size: 1.2em;
+      font-size: 1.3em;
       color: #ffd700;
+      text-shadow: 1px 1px 3px black;
     }
 
     .phone a {
       color: #ffd700;
-      text-decoration: none;
       font-weight: bold;
+      text-decoration: none;
     }
 
     .phone a:hover {
@@ -69,12 +63,10 @@
   </style>
 </head>
 <body>
-  <div class="content">
-    <h1>Kitchen Gold Foods</h1>
-    <p>Our flavorful journey is brewing.<br> We’re working behind the scenes to bring you authentic Indian spices.</p>
-    <div class="phone">
-      📞 Reach us at <a href="tel:+91-9986494353">+91-9986494353</a>
-    </div>
+  <h1>Kitchen Gold Foods</h1>
+  <p>Our flavorful journey is brewing.<br> We’re working behind the scenes to bring you authentic Indian spices.</p>
+  <div class="phone">
+    📞 Reach us at <a href="tel:+91-9986494353">+91-9986494353</a>
   </div>
 </body>
 </html>
