@@ -1,41 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kitchen Gold Foods</title>
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('https://images.unsplash.com/photo-1607522370275-f14206abe5d3?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+      background-size: cover;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
-      flex-direction: column;
       text-align: center;
-      color: #333;
+      color: white;
+      backdrop-filter: brightness(0.4);
+    }
+
+    .content {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 40px;
+      border-radius: 16px;
+      max-width: 600px;
+      width: 90%;
     }
 
     h1 {
-      font-size: 2.5em;
+      font-size: 3em;
       margin-bottom: 0.3em;
+      background: linear-gradient(to right, gold, orange);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 
     p {
-      font-size: 1.2em;
+      font-size: 1.3em;
+      margin-bottom: 1em;
+      line-height: 1.5;
     }
 
     .phone {
-      margin-top: 1em;
-      font-size: 1.1em;
-      color: #007BFF;
+      font-size: 1.2em;
+      color: #ffd700;
     }
 
     .phone a {
+      color: #ffd700;
       text-decoration: none;
-      color: inherit;
     }
 
     .phone a:hover {
@@ -44,10 +58,12 @@
   </style>
 </head>
 <body>
-  <h1>Our Website is Coming Soon</h1>
-  <p>We’re currently building something amazing. Stay tuned!</p>
-  <div class="phone">
-    📞 For direct queries, call us at <a href="tel:+91-9986494353">+91-9986494353</a>
+  <div class="content">
+    <h1>Kitchen Gold Foods</h1>
+    <p>Our flavorful journey is brewing. <br> We're working behind the scenes to bring you authentic Indian spices and recipes.</p>
+    <div class="phone">
+      📞 Reach us at <a href="tel:+91-9986494353">+91-9986494353</a>
+    </div>
   </div>
 </body>
 </html>
